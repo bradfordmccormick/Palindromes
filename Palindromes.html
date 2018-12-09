@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><!-- id="html" version="1.03" -->
+<head>
+    <mver id="mv" ver="2.17"></mver>
+    <script src="jquery.min.js"></script>
+    <script src="lodash.min.js"></script>
+    <title id="tt"></title>
+    <style>
+        .nowrap {
+            white-space: nowrap;
+        }
+        .widthFitContent {
+            width: fit-content;
+        }
+        #plsp:hover {
+            background-color: Yellow;
+            //font-weight: bold;
+            //font-style: italic;
+        }
+        #pdl:hover {
+            //background-color: Yellow;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body id="bdy" style="margin: 22px 20px 10px 32px; background:FloralWhite;"><!-- onLoad="ol();" -->
+    <div class="widthFitContent">
+        <h4 id="h4" class="nowrap" style="margin: 0px 10px 10px 0px;"></h4>
+        <p class="nowrap widthFitContent" style="margin: 0px 0px 10px 0px;">
+            <a id="redo" style="font-weight: bold;">Reload</a>
+            <span style="margin: 0px 6px 0px 8px;">(<i>Target:</i> <span id="redoTgt"> </span>).</span>
+            <input id="ck" onclick="elemClicked(this)" type="checkbox" name="checker" value="Check"
+                   style="vertical-align:bottom;" unchecked>(<span id="ckt">Unchecked</span>)
+        </p>
+        <hr>
+    </div>
+    <div class="widthFitContent">
+        <p class="nowrap widthFitContent"
+                   style="margin: 20px 0px 0px 0px; padding: 4px 4px 4px 0px;">
+            <button id="doit" type="button" onclick="elemClicked(this)"
+                style="padding: 4px 5px 4px 5px;border-radius: 2px;color: blue;font-weight: bold;">Process(<span
+                        id='grl' style='font-weight:normal;'></span>)</span><img height=11 width=10 
+                            style="vertical-align:baseline;margin:0px 0px 0px 2px;"
+                                    src="next2a.gif"></button>
+            <input id="inp" type="Text" name="inp" size="56" onpaste="corp()" oncut="corp()"
+                    style="padding: 4px 6px 4px 6px;margin: 0px 0px 0px 5px;"></p>
+        <p id="mfp" class="nowrap widthFitContent"
+                style="margin: 14px 0px 0px 15px;"><i>Stripped (<span id='stl'></span>):</i>
+            <span id="modifiedString" class="widthFitContent" style="margin: 4px 0px 0px 4px;
+                       padding: 1px 6px 1px 5px; border: 1px solid darkgray;
+                              background-color: White;">modified text</span></p>
+        <p id="palindromes" 
+           style="margin: 16px 0px 12px 8px;">x</p>
+    <!-- scroll-behavior: smooth;height: 280px; width: 500px;overflow: auto;  -->
+        <hr>
+        <p><span id="plsp" style="margin: 12px 0px 25px 30px;
+                border: 1px solid darkgray; padding: 3px 7px 4px 6px;
+                border-radius: 3px; width: min-content;white-space: nowrap;
+                  font-size:14px;" title="[ Go to palindromes list website! ]">
+            <a id="pdl" href="http://www.palindromelist.net/"
+               target="pls">Open palindromes list website</a> (http://www.palindromelist.net/)</span>
+                   <span style="margin: 0px 0px 0px 10px; font-size: 14px;">(<span id="ttl"></span> chars)</span></p>
+    </div>
+</body>
+<script src="Palindromes.js"></script>
+</html>
